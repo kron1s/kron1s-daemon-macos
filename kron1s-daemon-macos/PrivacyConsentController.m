@@ -13,7 +13,7 @@
 
 @interface PrivacyConsentController ()
 
-@property(atomic, strong) NSMutableDictionary *consentStates;
+@property(atomic, strong) NSMutableDictionary<NSString*, NSNumber*> *consentStates;
 
 @end
 
@@ -32,7 +32,7 @@
 - (instancetype)init
 {
     if (self = [super init]) {
-        _consentStates = [NSMutableDictionary alloc];
+        _consentStates = [[NSMutableDictionary alloc] init];
         if (@available(macOS 10.14, *)) {
             [[[NSWorkspace sharedWorkspace] notificationCenter] addObserver:self
                                                                    selector:@selector(applicationLaunched:)
@@ -50,6 +50,18 @@
                                                                    });
 }
 
+- (PrivacyConsentState)cachedAutomationConsentForBundleIdentifier:(NSString *)bundleIdentifier promptIfNeeded:(BOOL)promptIfNeeded
+{
+    if ([_consentStates objectForKey:bundleIdentifier] != nil) {
+        return [_consentStates objectForKey:bundleIdentifier].integerValue;
+    } else {
+        PrivacyConsentState consentStates = [self automationConsentForBundleIdentifier:bundleIdentifier promptIfNeeded:promptIfNeeded];
+        [_consentStates setObject:[NSNumber numberWithInteger:consentStates] forKey:bundleIdentifier];
+        return consentStates;
+    }
+}
+
+// https://github.com/Panopto/test-mac-privacy-consent
 - (PrivacyConsentState)automationConsentForBundleIdentifier:(NSString *)bundleIdentifier promptIfNeeded:(BOOL)promptIfNeeded
 {
     PrivacyConsentState result;

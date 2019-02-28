@@ -52,7 +52,7 @@ int main(int argc, const char * argv[]) {
     NSDictionary *windowInformation = _getActiveWindowInformation();
     NSLog(@"%@", windowInformation);
     
-    PrivacyConsentState consentState = [[PrivacyConsentController sharedController] automationConsentForBundleIdentifier:windowInformation[@"bundleIdentifier"] promptIfNeeded:YES];
+    PrivacyConsentState consentState = [[PrivacyConsentController sharedController] cachedAutomationConsentForBundleIdentifier:windowInformation[@"bundleIdentifier"] promptIfNeeded:YES];
     
     if (consentState != PrivacyConsentStateGranted) {
         return 0;

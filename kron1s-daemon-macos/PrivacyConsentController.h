@@ -22,6 +22,7 @@ typedef NS_ENUM(NSInteger, PrivacyConsentState) {
 
 - (BOOL)accessibilityConsentWithPrompt;
 
+- (PrivacyConsentState)cachedAutomationConsentForBundleIdentifier:(NSString *)bundleIdentifier promptIfNeeded:(BOOL)promptIfNeeded;
 - (PrivacyConsentState)automationConsentForBundleIdentifier:(NSString *)bundleIdentifier promptIfNeeded:(BOOL)promptIfNeeded;
 
 @end
