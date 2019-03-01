@@ -8,6 +8,8 @@
 
 #import "AppDelegate.h"
 
+#import "StatusBarController.h"
+
 @interface AppDelegate ()
 
 @property (weak) IBOutlet NSWindow *window;
@@ -16,7 +18,7 @@
 @implementation AppDelegate
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
-    // Insert code here to initialize your application
+    (void)[StatusBarController sharedController];
 }
 
 

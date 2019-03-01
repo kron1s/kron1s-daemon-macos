@@ -93,12 +93,13 @@ int main(int argc, const char * argv[]) {
         // no script result, handle error here
     }
     
-    [[NSRunLoop currentRunLoop] run];
+//    [[NSRunLoop currentRunLoop] run];
     
     @autoreleasepool {
         // insert code here...
         NSLog(@"Hello, World!");
     }
+
     return NSApplicationMain(argc, argv);
-    return 0;
+//    return 0;
 }

@@ -1,0 +1,513 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		784134D2760C7E1B07D1823344794498 /* Pods-kron1s-daemon-macos-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 425D6D894256BE5B01F4B2C6C3278949 /* Pods-kron1s-daemon-macos-dummy.m */; };
+		95788563F2EABFDACBCB419E26529EE6 /* ITSwitch.h in Headers */ = {isa = PBXBuildFile; fileRef = 77D4B3B46E0A4AFBADACEFAAEE176486 /* ITSwitch.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		BE24DF72CE6AB8AD8B9187660BD673E0 /* ITSwitch-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 06C4E01F369267BF7BD0AD6FF58D86B1 /* ITSwitch-dummy.m */; };
+		C6F553548334201A17AAFC91222D1416 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34218CEECDEFAC472CB8108D7E3F553D /* QuartzCore.framework */; };
+		FB8ABD0054F54212515104EBC2443D6B /* ITSwitch.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F2E6A45160F7017429FC3DADACE9977 /* ITSwitch.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C9BB1154DF5BDFC8DE91F8265F8F1B3D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6AF62F9353AE461CA7B458BA26E95D68;
+			remoteInfo = ITSwitch;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		06C4E01F369267BF7BD0AD6FF58D86B1 /* ITSwitch-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ITSwitch-dummy.m"; sourceTree = "<group>"; };
+		2F4723A87DB1C4B7A48F2A1B4CBBF0FE /* Pods-kron1s-daemon-macos.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-kron1s-daemon-macos.debug.xcconfig"; sourceTree = "<group>"; };
+		34218CEECDEFAC472CB8108D7E3F553D /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		4136C751DA11B387D00CD2C3AF3CDA9E /* Pods-kron1s-daemon-macos-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-kron1s-daemon-macos-frameworks.sh"; sourceTree = "<group>"; };
+		425D6D894256BE5B01F4B2C6C3278949 /* Pods-kron1s-daemon-macos-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-kron1s-daemon-macos-dummy.m"; sourceTree = "<group>"; };
+		5332AE73E938162F49C5558C21FC3298 /* ITSwitch.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ITSwitch.xcconfig; sourceTree = "<group>"; };
+		5AC41446F54EEF39BA97F8DC6F8ED0C0 /* Pods-kron1s-daemon-macos-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-kron1s-daemon-macos-acknowledgements.plist"; sourceTree = "<group>"; };
+		61DBBB3706FDD842EDB2D6E206749B2D /* Pods-kron1s-daemon-macos-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-kron1s-daemon-macos-acknowledgements.markdown"; sourceTree = "<group>"; };
+		77D4B3B46E0A4AFBADACEFAAEE176486 /* ITSwitch.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ITSwitch.h; path = ITSwitch/ITSwitch.h; sourceTree = "<group>"; };
+		79F95AB28E6CD3E23E1D77E445A82CAE /* Pods-kron1s-daemon-macos.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-kron1s-daemon-macos.release.xcconfig"; sourceTree = "<group>"; };
+		7F2E6A45160F7017429FC3DADACE9977 /* ITSwitch.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ITSwitch.m; path = ITSwitch/ITSwitch.m; sourceTree = "<group>"; };
+		8B09B450328B7E6F62BCEE6BBE692E26 /* libITSwitch.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libITSwitch.a; path = libITSwitch.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		985BD9A32B3DE5ABA14D77E6A462EE67 /* ITSwitch-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ITSwitch-prefix.pch"; sourceTree = "<group>"; };
+		9B2854B65E37C05681EA1125BA85B050 /* Pods-kron1s-daemon-macos-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-kron1s-daemon-macos-resources.sh"; sourceTree = "<group>"; };
+		D5E9A6E8BA8CF6E76E0647263D46EC10 /* libPods-kron1s-daemon-macos.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-kron1s-daemon-macos.a"; path = "libPods-kron1s-daemon-macos.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AFE5123C36194E2107511DA7EE467C96 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F197DB50AF10A129D6C0DF0A0265E2A4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C6F553548334201A17AAFC91222D1416 /* QuartzCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		39E9EE8210D861DFD82346C1F5EB7218 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BCDC58841F2D4723BDCD5CA64F05BBF2 /* OS X */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5C299EA49D2CB06867449BCB88F0E006 /* ITSwitch */ = {
+			isa = PBXGroup;
+			children = (
+				77D4B3B46E0A4AFBADACEFAAEE176486 /* ITSwitch.h */,
+				7F2E6A45160F7017429FC3DADACE9977 /* ITSwitch.m */,
+				BBB376650E55052DF0B0C6F044F4AEF0 /* Support Files */,
+			);
+			name = ITSwitch;
+			path = ITSwitch;
+			sourceTree = "<group>";
+		};
+		70FA24F31E89265FF488450619F1757C /* Pods-kron1s-daemon-macos */ = {
+			isa = PBXGroup;
+			children = (
+				61DBBB3706FDD842EDB2D6E206749B2D /* Pods-kron1s-daemon-macos-acknowledgements.markdown */,
+				5AC41446F54EEF39BA97F8DC6F8ED0C0 /* Pods-kron1s-daemon-macos-acknowledgements.plist */,
+				425D6D894256BE5B01F4B2C6C3278949 /* Pods-kron1s-daemon-macos-dummy.m */,
+				4136C751DA11B387D00CD2C3AF3CDA9E /* Pods-kron1s-daemon-macos-frameworks.sh */,
+				9B2854B65E37C05681EA1125BA85B050 /* Pods-kron1s-daemon-macos-resources.sh */,
+				2F4723A87DB1C4B7A48F2A1B4CBBF0FE /* Pods-kron1s-daemon-macos.debug.xcconfig */,
+				79F95AB28E6CD3E23E1D77E445A82CAE /* Pods-kron1s-daemon-macos.release.xcconfig */,
+			);
+			name = "Pods-kron1s-daemon-macos";
+			path = "Target Support Files/Pods-kron1s-daemon-macos";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				39E9EE8210D861DFD82346C1F5EB7218 /* Frameworks */,
+				91BA428343D1F787F12C469C6CDFEE13 /* Pods */,
+				9EFA4BB3BD42E5E1CD128B9E12A91E8D /* Products */,
+				8102718AC8715A5F2496FABDF6E42D2C /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		8102718AC8715A5F2496FABDF6E42D2C /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				70FA24F31E89265FF488450619F1757C /* Pods-kron1s-daemon-macos */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		91BA428343D1F787F12C469C6CDFEE13 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5C299EA49D2CB06867449BCB88F0E006 /* ITSwitch */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		9EFA4BB3BD42E5E1CD128B9E12A91E8D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8B09B450328B7E6F62BCEE6BBE692E26 /* libITSwitch.a */,
+				D5E9A6E8BA8CF6E76E0647263D46EC10 /* libPods-kron1s-daemon-macos.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BBB376650E55052DF0B0C6F044F4AEF0 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				5332AE73E938162F49C5558C21FC3298 /* ITSwitch.xcconfig */,
+				06C4E01F369267BF7BD0AD6FF58D86B1 /* ITSwitch-dummy.m */,
+				985BD9A32B3DE5ABA14D77E6A462EE67 /* ITSwitch-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/ITSwitch";
+			sourceTree = "<group>";
+		};
+		BCDC58841F2D4723BDCD5CA64F05BBF2 /* OS X */ = {
+			isa = PBXGroup;
+			children = (
+				34218CEECDEFAC472CB8108D7E3F553D /* QuartzCore.framework */,
+			);
+			name = "OS X";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		209FAA022E23901189F73C231B1DDAEE /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9811AFF642FC4EFF4806851B0EB4C2FF /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95788563F2EABFDACBCB419E26529EE6 /* ITSwitch.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		4CCAB26264C28FF474A4B191C02E2DDF /* Pods-kron1s-daemon-macos */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 13DF3BB97100D22A5172A3DF2E0ED4AF /* Build configuration list for PBXNativeTarget "Pods-kron1s-daemon-macos" */;
+			buildPhases = (
+				209FAA022E23901189F73C231B1DDAEE /* Headers */,
+				4D91FD98F8CE991374C34F3F6E7F8273 /* Sources */,
+				AFE5123C36194E2107511DA7EE467C96 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				72FBCF2DA7289166A59348F5D34D955A /* PBXTargetDependency */,
+			);
+			name = "Pods-kron1s-daemon-macos";
+			productName = "Pods-kron1s-daemon-macos";
+			productReference = D5E9A6E8BA8CF6E76E0647263D46EC10 /* libPods-kron1s-daemon-macos.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		6AF62F9353AE461CA7B458BA26E95D68 /* ITSwitch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 83BCD2EEE2455FC8E000E65BA406C58F /* Build configuration list for PBXNativeTarget "ITSwitch" */;
+			buildPhases = (
+				9811AFF642FC4EFF4806851B0EB4C2FF /* Headers */,
+				9D7A1E7D77528DE6E7D6472F434B2735 /* Sources */,
+				F197DB50AF10A129D6C0DF0A0265E2A4 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ITSwitch;
+			productName = ITSwitch;
+			productReference = 8B09B450328B7E6F62BCEE6BBE692E26 /* libITSwitch.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 9EFA4BB3BD42E5E1CD128B9E12A91E8D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6AF62F9353AE461CA7B458BA26E95D68 /* ITSwitch */,
+				4CCAB26264C28FF474A4B191C02E2DDF /* Pods-kron1s-daemon-macos */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4D91FD98F8CE991374C34F3F6E7F8273 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				784134D2760C7E1B07D1823344794498 /* Pods-kron1s-daemon-macos-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D7A1E7D77528DE6E7D6472F434B2735 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE24DF72CE6AB8AD8B9187660BD673E0 /* ITSwitch-dummy.m in Sources */,
+				FB8ABD0054F54212515104EBC2443D6B /* ITSwitch.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		72FBCF2DA7289166A59348F5D34D955A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ITSwitch;
+			target = 6AF62F9353AE461CA7B458BA26E95D68 /* ITSwitch */;
+			targetProxy = C9BB1154DF5BDFC8DE91F8265F8F1B3D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		399B6988D3975B2F99C7DB3DE8B3B9A0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 79F95AB28E6CD3E23E1D77E445A82CAE /* Pods-kron1s-daemon-macos.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				EXECUTABLE_PREFIX = lib;
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		557B48D4DB7428971D04E93ADE986F62 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5332AE73E938162F49C5558C21FC3298 /* ITSwitch.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				EXECUTABLE_PREFIX = lib;
+				GCC_PREFIX_HEADER = "Target Support Files/ITSwitch/ITSwitch-prefix.pch";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = ITSwitch;
+				PRODUCT_NAME = ITSwitch;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+			};
+			name = Debug;
+		};
+		8E1C8916AD95A82E97FAFC08F7E92E53 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2F4723A87DB1C4B7A48F2A1B4CBBF0FE /* Pods-kron1s-daemon-macos.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				EXECUTABLE_PREFIX = lib;
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		9992CE2C5F65320F0081E9A0ACAFFF91 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		D79C9CF82E0503B6800775A4C33DD9A7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		DE11DB80D388252F7B9992D8547152A4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5332AE73E938162F49C5558C21FC3298 /* ITSwitch.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				EXECUTABLE_PREFIX = lib;
+				GCC_PREFIX_HEADER = "Target Support Files/ITSwitch/ITSwitch-prefix.pch";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = ITSwitch;
+				PRODUCT_NAME = ITSwitch;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		13DF3BB97100D22A5172A3DF2E0ED4AF /* Build configuration list for PBXNativeTarget "Pods-kron1s-daemon-macos" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8E1C8916AD95A82E97FAFC08F7E92E53 /* Debug */,
+				399B6988D3975B2F99C7DB3DE8B3B9A0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D79C9CF82E0503B6800775A4C33DD9A7 /* Debug */,
+				9992CE2C5F65320F0081E9A0ACAFFF91 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		83BCD2EEE2455FC8E000E65BA406C58F /* Build configuration list for PBXNativeTarget "ITSwitch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				557B48D4DB7428971D04E93ADE986F62 /* Debug */,
+				DE11DB80D388252F7B9992D8547152A4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

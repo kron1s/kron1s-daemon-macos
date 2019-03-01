@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		98982236E21A3982BB492A1A /* libPods-kron1s-daemon-macos.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E1144BB0A40F107A430A208 /* libPods-kron1s-daemon-macos.a */; };
+		B26BC46E2228E63700574EC3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B26BC46D2228E63700574EC3 /* Assets.xcassets */; };
+		B26BC4712228E80D00574EC3 /* StatusBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = B26BC4702228E80D00574EC3 /* StatusBarController.m */; };
+		B26BC4742228EB3300574EC3 /* PopoverContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B26BC4732228EB3300574EC3 /* PopoverContentViewController.m */; };
+		B26BC4762228F51E00574EC3 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B26BC4752228F51E00574EC3 /* QuartzCore.framework */; };
+		B26BC4792228FC1E00574EC3 /* TimeTrackingController.m in Sources */ = {isa = PBXBuildFile; fileRef = B26BC4782228FC1E00574EC3 /* TimeTrackingController.m */; };
 		B2C9F2A12227AAE400D499B6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B2C9F2A02227AAE400D499B6 /* AppDelegate.m */; };
 		B2C9F2A62227AAE500D499B6 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2C9F2A42227AAE500D499B6 /* MainMenu.xib */; };
 		B2C9F2A92227AAE500D499B6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B2C9F2A82227AAE500D499B6 /* main.m */; };
@@ -19,6 +25,17 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0E1144BB0A40F107A430A208 /* libPods-kron1s-daemon-macos.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-kron1s-daemon-macos.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C8431D83D007AF63E573277 /* Pods-kron1s-daemon-macos.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kron1s-daemon-macos.release.xcconfig"; path = "Pods/Target Support Files/Pods-kron1s-daemon-macos/Pods-kron1s-daemon-macos.release.xcconfig"; sourceTree = "<group>"; };
+		95FE71F9D6D2F448787B908E /* Pods-kron1s-daemon-macos.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kron1s-daemon-macos.debug.xcconfig"; path = "Pods/Target Support Files/Pods-kron1s-daemon-macos/Pods-kron1s-daemon-macos.debug.xcconfig"; sourceTree = "<group>"; };
+		B26BC46D2228E63700574EC3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B26BC46F2228E80D00574EC3 /* StatusBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StatusBarController.h; sourceTree = "<group>"; };
+		B26BC4702228E80D00574EC3 /* StatusBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StatusBarController.m; sourceTree = "<group>"; };
+		B26BC4722228EB3300574EC3 /* PopoverContentViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PopoverContentViewController.h; sourceTree = "<group>"; };
+		B26BC4732228EB3300574EC3 /* PopoverContentViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PopoverContentViewController.m; sourceTree = "<group>"; };
+		B26BC4752228F51E00574EC3 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		B26BC4772228FC1E00574EC3 /* TimeTrackingController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TimeTrackingController.h; sourceTree = "<group>"; };
+		B26BC4782228FC1E00574EC3 /* TimeTrackingController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TimeTrackingController.m; sourceTree = "<group>"; };
 		B2C9F29C2227AAE400D499B6 /* kron1s-daemon-macos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "kron1s-daemon-macos.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2C9F29F2227AAE400D499B6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B2C9F2A02227AAE400D499B6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -40,22 +57,34 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B26BC4762228F51E00574EC3 /* QuartzCore.framework in Frameworks */,
 				B2C9F2BB2227ADB600D499B6 /* ApplicationServices.framework in Frameworks */,
 				B2C9F2B72227AD9000D499B6 /* AppleScriptKit.framework in Frameworks */,
 				B2C9F2B82227AD9000D499B6 /* Cocoa.framework in Frameworks */,
 				B2C9F2B92227AD9000D499B6 /* ScriptingBridge.framework in Frameworks */,
+				98982236E21A3982BB492A1A /* libPods-kron1s-daemon-macos.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		637AEF7BC06F3D65EB3640F3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				95FE71F9D6D2F448787B908E /* Pods-kron1s-daemon-macos.debug.xcconfig */,
+				5C8431D83D007AF63E573277 /* Pods-kron1s-daemon-macos.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		B2C9F2932227AAE400D499B6 = {
 			isa = PBXGroup;
 			children = (
 				B2C9F29E2227AAE400D499B6 /* kron1s-daemon-macos */,
 				B2C9F29D2227AAE400D499B6 /* Products */,
 				B2C9F2B32227AD8F00D499B6 /* Frameworks */,
+				637AEF7BC06F3D65EB3640F3 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -79,6 +108,13 @@
 				B2C9F2AA2227AAE500D499B6 /* kron1s_daemon_macos.entitlements */,
 				B2C9F2BD2227B61C00D499B6 /* PrivacyConsentController.h */,
 				B2C9F2BE2227B61C00D499B6 /* PrivacyConsentController.m */,
+				B26BC46D2228E63700574EC3 /* Assets.xcassets */,
+				B26BC46F2228E80D00574EC3 /* StatusBarController.h */,
+				B26BC4702228E80D00574EC3 /* StatusBarController.m */,
+				B26BC4722228EB3300574EC3 /* PopoverContentViewController.h */,
+				B26BC4732228EB3300574EC3 /* PopoverContentViewController.m */,
+				B26BC4772228FC1E00574EC3 /* TimeTrackingController.h */,
+				B26BC4782228FC1E00574EC3 /* TimeTrackingController.m */,
 			);
 			path = "kron1s-daemon-macos";
 			sourceTree = "<group>";
@@ -94,10 +130,12 @@
 		B2C9F2B32227AD8F00D499B6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B26BC4752228F51E00574EC3 /* QuartzCore.framework */,
 				B2C9F2BA2227ADB600D499B6 /* ApplicationServices.framework */,
 				B2C9F2B42227AD9000D499B6 /* AppleScriptKit.framework */,
 				B2C9F2B52227AD9000D499B6 /* Cocoa.framework */,
 				B2C9F2B62227AD9000D499B6 /* ScriptingBridge.framework */,
+				0E1144BB0A40F107A430A208 /* libPods-kron1s-daemon-macos.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -109,6 +147,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B2C9F2AD2227AAE500D499B6 /* Build configuration list for PBXNativeTarget "kron1s-daemon-macos" */;
 			buildPhases = (
+				C30AB12ADA53318F07BFEA03 /* [CP] Check Pods Manifest.lock */,
 				B2C9F2982227AAE400D499B6 /* Sources */,
 				B2C9F2992227AAE400D499B6 /* Frameworks */,
 				B2C9F29A2227AAE400D499B6 /* Resources */,
@@ -165,11 +204,37 @@
 			buildActionMask = 2147483647;
 			files = (
 				B2C9F2B22227AB6700D499B6 /* getPathAndTitle.scpt in Resources */,
+				B26BC46E2228E63700574EC3 /* Assets.xcassets in Resources */,
 				B2C9F2A62227AAE500D499B6 /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C30AB12ADA53318F07BFEA03 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-kron1s-daemon-macos-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B2C9F2982227AAE400D499B6 /* Sources */ = {
@@ -177,7 +242,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				B2C9F2A92227AAE500D499B6 /* main.m in Sources */,
+				B26BC4792228FC1E00574EC3 /* TimeTrackingController.m in Sources */,
+				B26BC4712228E80D00574EC3 /* StatusBarController.m in Sources */,
 				B2C9F2BF2227B61C00D499B6 /* PrivacyConsentController.m in Sources */,
+				B26BC4742228EB3300574EC3 /* PopoverContentViewController.m in Sources */,
 				B2C9F2A12227AAE400D499B6 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -309,6 +377,7 @@
 		};
 		B2C9F2AE2227AAE500D499B6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 95FE71F9D6D2F448787B908E /* Pods-kron1s-daemon-macos.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -325,6 +394,7 @@
 		};
 		B2C9F2AF2227AAE500D499B6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5C8431D83D007AF63E573277 /* Pods-kron1s-daemon-macos.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
