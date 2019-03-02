@@ -47,16 +47,9 @@
         [_statusItem.button setAction:@selector(showContextMenu:)];
         [_statusItem.button sendActionOn:(NSEventMaskLeftMouseUp | NSEventMaskRightMouseUp)];
         
-        _statusMenu = [NSMenu new];
-        _statusItem.menu = _statusMenu;
-        
         _popoverContentViewController = [[PopoverContentViewController alloc] init];
         
-        NSMenuItem *popoverItem = [NSMenuItem new];
-        popoverItem.view = _popoverContentViewController.view;
-        [_statusMenu addItem:popoverItem];
-        
-        [_statusMenu addItem:[NSMenuItem separatorItem]];
+        _statusMenu = [NSMenu new];
         
         NSMenuItem *trackedItem = [[NSMenuItem alloc] initWithTitle:@"2h tracked today on this computer" action:nil keyEquivalent:@""];
         [_statusMenu addItem:trackedItem];
@@ -84,11 +77,12 @@
         case NSEventTypeRightMouseUp:
         case NSEventTypeRightMouseDown:
             [_popover performClose:sender];
-            if (@available(macOS 10.14, *)) {
-                [NSMenu popUpContextMenu:_statusMenu withEvent:[NSApp currentEvent] forView:_statusItem.button];
-            } else {
-                [_statusItem popUpStatusItemMenu:_statusMenu];
-            }
+            [_statusItem popUpStatusItemMenu:_statusMenu];
+//            if (@available(macOS 10.14, *)) {
+//                [NSMenu popUpContextMenu:_statusMenu withEvent:[NSApp currentEvent] forView:_statusItem.button];
+//            } else {
+//                [_statusItem popUpStatusItemMenu:_statusMenu];
+//            }
             break;
         default:
             [self togglePopover:sender];
