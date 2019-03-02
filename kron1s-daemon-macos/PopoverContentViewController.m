@@ -12,6 +12,8 @@
 #import <AppKit/AppKit.h>
 #import <ITSwitch/ITSwitch.h>
 
+#import "UserPreferencePersistent.h"
+
 @interface PopoverContentViewController ()
 
 @property(atomic, strong) NSTextField *titleLabel;
@@ -62,16 +64,35 @@
     [_promptLabel setSelectable:NO];
     [_promptLabel setAlignment:NSTextAlignmentCenter];
     [self.view addSubview:_promptLabel];
+    
+    [self.KVOController observe:[UserPreferencePersistent sharedController]
+                        keyPath:@"trackingEnabled"
+                        options:NSKeyValueObservingOptionNew | NSKeyValueObservingOptionInitial
+                          block:^(id  _Nullable observer, id  _Nonnull object, NSDictionary<NSString *,id> * _Nonnull change) {
+                              BOOL trackingEnabled = [change[NSKeyValueChangeNewKey] boolValue];
+                              if (trackingEnabled) {
+                                  [self _enableTracking];
+                              } else {
+                                  [self _disableTracking];
+                              }
+                          }];
 }
 
 - (void)toggleActivateTrackingSwitch:(id)sender
 {
-    if (_activateTrackingSwitch.checked) {
-        [_promptLabel setStringValue:@"Tracking enabled."];
-    } else {
-        
-    }
-//    NSLog(@"%@", _activateTrackingSwitch.checked);
+    [[UserPreferencePersistent sharedController] setTrackingEnabled:_activateTrackingSwitch.checked];
+}
+
+- (void)_enableTracking
+{
+    [_activateTrackingSwitch setChecked:YES];
+    [_promptLabel setStringValue:@"Tracking enabled."];
+}
+
+- (void)_disableTracking
+{
+    [_activateTrackingSwitch setChecked:NO];
+    [_promptLabel setStringValue:@"Tracking disabled."];
 }
 
 @end

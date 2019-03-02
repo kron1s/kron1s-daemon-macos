@@ -12,7 +12,7 @@ static NSString* const kTrackingEnabledKey = @"TRACKING_ENABLED";
 
 @interface UserPreferencePersistent ()
 
-@property (atomic) BOOL trackingEnabled;
+@property (nonatomic, assign) BOOL trackingEnabled;
 
 @end
 

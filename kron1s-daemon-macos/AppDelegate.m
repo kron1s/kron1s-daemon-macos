@@ -10,6 +10,7 @@
 
 #import "StatusBarController.h"
 #import "UserPreferencePersistent.h"
+#import "TimeTrackingController.h"
 
 @interface AppDelegate ()
 
@@ -20,7 +21,9 @@
 @implementation AppDelegate
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
+    (void)[UserPreferencePersistent sharedController];
     (void)[StatusBarController sharedController];
+    (void)[TimeTrackingController sharedController];
 }
 
 

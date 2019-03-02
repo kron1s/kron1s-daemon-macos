@@ -11,6 +11,7 @@
 #import <Cocoa/Cocoa.h>
 
 #import "PopoverContentViewController.h"
+#import "UserPreferencePersistent.h"
 
 @interface StatusBarController ()
 

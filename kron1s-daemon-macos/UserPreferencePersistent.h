@@ -7,11 +7,15 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <KVOController/NSObject+FBKVOController.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface UserPreferencePersistent : NSObject
 + (instancetype)sharedController;
+
+- (void)setTrackingEnabled:(BOOL)trackingEnabled;
+- (BOOL)trackingEnabled;
 
 @end
 
