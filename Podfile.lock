@@ -1,16 +1,20 @@
 PODS:
   - ITSwitch (1.0)
+  - KVOController (1.2.0)
 
 DEPENDENCIES:
   - ITSwitch (~> 1.0)
+  - KVOController
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
     - ITSwitch
+    - KVOController
 
 SPEC CHECKSUMS:
   ITSwitch: 7ff745d6f2a6910e9194b23e4eab9a843258a478
+  KVOController: d72ace34afea42468329623b3379ab3cd1d286b6
 
-PODFILE CHECKSUM: 57860f06eb62314de104192145a1ffb7aa6262b1
+PODFILE CHECKSUM: f6cb57430e7febbb5b4e25c6d4194fd6a0f1bc6e
 
 COCOAPODS: 1.5.0
