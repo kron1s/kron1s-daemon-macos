@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		98982236E21A3982BB492A1A /* libPods-kron1s-daemon-macos.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E1144BB0A40F107A430A208 /* libPods-kron1s-daemon-macos.a */; };
+		B22187F8222A045800D7B0D3 /* UserPreferencePersistent.m in Sources */ = {isa = PBXBuildFile; fileRef = B22187F7222A045800D7B0D3 /* UserPreferencePersistent.m */; };
 		B26BC46E2228E63700574EC3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B26BC46D2228E63700574EC3 /* Assets.xcassets */; };
 		B26BC4712228E80D00574EC3 /* StatusBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = B26BC4702228E80D00574EC3 /* StatusBarController.m */; };
 		B26BC4742228EB3300574EC3 /* PopoverContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B26BC4732228EB3300574EC3 /* PopoverContentViewController.m */; };
@@ -28,6 +29,8 @@
 		0E1144BB0A40F107A430A208 /* libPods-kron1s-daemon-macos.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-kron1s-daemon-macos.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C8431D83D007AF63E573277 /* Pods-kron1s-daemon-macos.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kron1s-daemon-macos.release.xcconfig"; path = "Pods/Target Support Files/Pods-kron1s-daemon-macos/Pods-kron1s-daemon-macos.release.xcconfig"; sourceTree = "<group>"; };
 		95FE71F9D6D2F448787B908E /* Pods-kron1s-daemon-macos.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kron1s-daemon-macos.debug.xcconfig"; path = "Pods/Target Support Files/Pods-kron1s-daemon-macos/Pods-kron1s-daemon-macos.debug.xcconfig"; sourceTree = "<group>"; };
+		B22187F6222A045800D7B0D3 /* UserPreferencePersistent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserPreferencePersistent.h; sourceTree = "<group>"; };
+		B22187F7222A045800D7B0D3 /* UserPreferencePersistent.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserPreferencePersistent.m; sourceTree = "<group>"; };
 		B26BC46D2228E63700574EC3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B26BC46F2228E80D00574EC3 /* StatusBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StatusBarController.h; sourceTree = "<group>"; };
 		B26BC4702228E80D00574EC3 /* StatusBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StatusBarController.m; sourceTree = "<group>"; };
@@ -115,6 +118,8 @@
 				B26BC4732228EB3300574EC3 /* PopoverContentViewController.m */,
 				B26BC4772228FC1E00574EC3 /* TimeTrackingController.h */,
 				B26BC4782228FC1E00574EC3 /* TimeTrackingController.m */,
+				B22187F6222A045800D7B0D3 /* UserPreferencePersistent.h */,
+				B22187F7222A045800D7B0D3 /* UserPreferencePersistent.m */,
 			);
 			path = "kron1s-daemon-macos";
 			sourceTree = "<group>";
@@ -243,6 +248,7 @@
 			files = (
 				B2C9F2A92227AAE500D499B6 /* main.m in Sources */,
 				B26BC4792228FC1E00574EC3 /* TimeTrackingController.m in Sources */,
+				B22187F8222A045800D7B0D3 /* UserPreferencePersistent.m in Sources */,
 				B26BC4712228E80D00574EC3 /* StatusBarController.m in Sources */,
 				B2C9F2BF2227B61C00D499B6 /* PrivacyConsentController.m in Sources */,
 				B26BC4742228EB3300574EC3 /* PopoverContentViewController.m in Sources */,

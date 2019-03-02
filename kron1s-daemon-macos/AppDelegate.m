@@ -9,10 +9,12 @@
 #import "AppDelegate.h"
 
 #import "StatusBarController.h"
+#import "UserPreferencePersistent.h"
 
 @interface AppDelegate ()
 
 @property (weak) IBOutlet NSWindow *window;
+
 @end
 
 @implementation AppDelegate
