@@ -42,18 +42,34 @@
         NSImage *icon = [NSImage imageNamed:@"StatusBarButtonImage"];
         icon.template = YES;
         
-        _statusMenu = [NSMenu new];
-        NSMenuItem *item = [[NSMenuItem alloc] initWithTitle:@"Quit" action:@selector(togglePopover:) keyEquivalent:@""];
-        [item setKeyEquivalentModifierMask:NSEventModifierFlagCommand];
-        [item setKeyEquivalent:@"q"];
-        [_statusMenu addItem:item];
-        
         _statusItem.button.image = icon;
         [_statusItem.button.cell setTarget:self];
         [_statusItem.button setAction:@selector(showContextMenu:)];
         [_statusItem.button sendActionOn:(NSEventMaskLeftMouseUp | NSEventMaskRightMouseUp)];
-
+        
+        _statusMenu = [NSMenu new];
+        _statusItem.menu = _statusMenu;
+        
         _popoverContentViewController = [[PopoverContentViewController alloc] init];
+        
+        NSMenuItem *popoverItem = [NSMenuItem new];
+        popoverItem.view = _popoverContentViewController.view;
+        [_statusMenu addItem:popoverItem];
+        
+        [_statusMenu addItem:[NSMenuItem separatorItem]];
+        
+        NSMenuItem *trackedItem = [[NSMenuItem alloc] initWithTitle:@"2h tracked today on this computer" action:nil keyEquivalent:@""];
+        [_statusMenu addItem:trackedItem];
+        
+        NSMenuItem *menuItemLastSync = [[NSMenuItem alloc] initWithTitle:@"Last sync: 13:31" action:nil keyEquivalent:@""];
+        [_statusMenu addItem:menuItemLastSync];
+        
+        [_statusMenu addItem:[NSMenuItem separatorItem]];
+        
+        NSMenuItem *menuItemQuit = [[NSMenuItem alloc] initWithTitle:@"Quit" action:@selector(togglePopover:) keyEquivalent:@""];
+        [menuItemQuit setKeyEquivalentModifierMask:NSEventModifierFlagCommand];
+        [menuItemQuit setKeyEquivalent:@"q"];
+        [_statusMenu addItem:menuItemQuit];
         
         _popover = [[NSPopover alloc] init];
         _popover.animates = YES;
@@ -64,7 +80,6 @@
 
 - (void)showContextMenu:(id)sender
 {
-    NSLog(@"%@", [NSApp currentEvent]);
     switch ([NSApp currentEvent].type) {
         case NSEventTypeRightMouseUp:
         case NSEventTypeRightMouseDown:
