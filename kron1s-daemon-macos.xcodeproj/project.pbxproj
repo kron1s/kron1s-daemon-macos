@@ -17,6 +17,7 @@
 		B26BC47B222B4F5A00574EC3 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B26BC47A222B4F5A00574EC3 /* libsqlite3.tbd */; };
 		B26BC47E222B4F8600574EC3 /* TimeTrackingPersistence.m in Sources */ = {isa = PBXBuildFile; fileRef = B26BC47D222B4F8600574EC3 /* TimeTrackingPersistence.m */; };
 		B2846E2A222B55B600E9D4CA /* NSFileManager+DirectoryLocations.m in Sources */ = {isa = PBXBuildFile; fileRef = B2846E29222B55B600E9D4CA /* NSFileManager+DirectoryLocations.m */; };
+		B2846E2D222B576B00E9D4CA /* WindowInformation.m in Sources */ = {isa = PBXBuildFile; fileRef = B2846E2C222B576B00E9D4CA /* WindowInformation.m */; };
 		B2C9F2A12227AAE400D499B6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B2C9F2A02227AAE400D499B6 /* AppDelegate.m */; };
 		B2C9F2A62227AAE500D499B6 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2C9F2A42227AAE500D499B6 /* MainMenu.xib */; };
 		B2C9F2A92227AAE500D499B6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B2C9F2A82227AAE500D499B6 /* main.m */; };
@@ -47,6 +48,8 @@
 		B26BC47D222B4F8600574EC3 /* TimeTrackingPersistence.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TimeTrackingPersistence.m; sourceTree = "<group>"; };
 		B2846E28222B55B600E9D4CA /* NSFileManager+DirectoryLocations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSFileManager+DirectoryLocations.h"; sourceTree = "<group>"; };
 		B2846E29222B55B600E9D4CA /* NSFileManager+DirectoryLocations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSFileManager+DirectoryLocations.m"; sourceTree = "<group>"; };
+		B2846E2B222B576B00E9D4CA /* WindowInformation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = WindowInformation.h; path = "kron1s-daemon-macos/WindowInformation.h"; sourceTree = SOURCE_ROOT; };
+		B2846E2C222B576B00E9D4CA /* WindowInformation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = WindowInformation.m; path = "kron1s-daemon-macos/WindowInformation.m"; sourceTree = SOURCE_ROOT; };
 		B2C9F29C2227AAE400D499B6 /* kron1s-daemon-macos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "kron1s-daemon-macos.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2C9F29F2227AAE400D499B6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B2C9F2A02227AAE400D499B6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -112,27 +115,29 @@
 			isa = PBXGroup;
 			children = (
 				B2C9F2B02227AB6700D499B6 /* Resource */,
-				B2C9F29F2227AAE400D499B6 /* AppDelegate.h */,
-				B2C9F2A02227AAE400D499B6 /* AppDelegate.m */,
 				B2C9F2A42227AAE500D499B6 /* MainMenu.xib */,
 				B2C9F2A72227AAE500D499B6 /* Info.plist */,
-				B2C9F2A82227AAE500D499B6 /* main.m */,
 				B2C9F2AA2227AAE500D499B6 /* kron1s_daemon_macos.entitlements */,
+				B26BC46D2228E63700574EC3 /* Assets.xcassets */,
+				B2C9F2A82227AAE500D499B6 /* main.m */,
+				B2C9F29F2227AAE400D499B6 /* AppDelegate.h */,
+				B2C9F2A02227AAE400D499B6 /* AppDelegate.m */,
 				B2C9F2BD2227B61C00D499B6 /* PrivacyConsentController.h */,
 				B2C9F2BE2227B61C00D499B6 /* PrivacyConsentController.m */,
-				B26BC46D2228E63700574EC3 /* Assets.xcassets */,
-				B26BC46F2228E80D00574EC3 /* StatusBarController.h */,
-				B26BC4702228E80D00574EC3 /* StatusBarController.m */,
 				B26BC4722228EB3300574EC3 /* PopoverContentViewController.h */,
 				B26BC4732228EB3300574EC3 /* PopoverContentViewController.m */,
-				B26BC4772228FC1E00574EC3 /* TimeTrackingController.h */,
-				B26BC4782228FC1E00574EC3 /* TimeTrackingController.m */,
-				B22187F6222A045800D7B0D3 /* UserPreferencePersistence.h */,
-				B22187F7222A045800D7B0D3 /* UserPreferencePersistence.m */,
 				B2846E28222B55B600E9D4CA /* NSFileManager+DirectoryLocations.h */,
 				B2846E29222B55B600E9D4CA /* NSFileManager+DirectoryLocations.m */,
+				B26BC46F2228E80D00574EC3 /* StatusBarController.h */,
+				B26BC4702228E80D00574EC3 /* StatusBarController.m */,
+				B26BC4772228FC1E00574EC3 /* TimeTrackingController.h */,
+				B26BC4782228FC1E00574EC3 /* TimeTrackingController.m */,
 				B26BC47C222B4F8600574EC3 /* TimeTrackingPersistence.h */,
 				B26BC47D222B4F8600574EC3 /* TimeTrackingPersistence.m */,
+				B22187F6222A045800D7B0D3 /* UserPreferencePersistence.h */,
+				B22187F7222A045800D7B0D3 /* UserPreferencePersistence.m */,
+				B2846E2B222B576B00E9D4CA /* WindowInformation.h */,
+				B2846E2C222B576B00E9D4CA /* WindowInformation.m */,
 			);
 			path = "kron1s-daemon-macos";
 			sourceTree = "<group>";
@@ -262,6 +267,7 @@
 			files = (
 				B2C9F2A92227AAE500D499B6 /* main.m in Sources */,
 				B26BC4792228FC1E00574EC3 /* TimeTrackingController.m in Sources */,
+				B2846E2D222B576B00E9D4CA /* WindowInformation.m in Sources */,
 				B2846E2A222B55B600E9D4CA /* NSFileManager+DirectoryLocations.m in Sources */,
 				B22187F8222A045800D7B0D3 /* UserPreferencePersistence.m in Sources */,
 				B26BC47E222B4F8600574EC3 /* TimeTrackingPersistence.m in Sources */,

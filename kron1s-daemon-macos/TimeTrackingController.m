@@ -13,64 +13,9 @@
 
 #import "PrivacyConsentController.h"
 #import "UserPreferencePersistence.h"
+#import "WindowInformation.h"
 
-@interface ActiveWindowInformation : NSObject
-
-@property (atomic, copy) NSURL *bundleURL;
-@property (atomic, copy) NSString *bundleIdentifier;
-@property (atomic, copy) NSURL *executableURL;
-@property (atomic, copy) NSString *localizedName;
-@property (nonatomic, assign) NSInteger processIdentifier;
-@property (atomic, copy) NSString *title;
-@property (atomic, copy) NSString *path;
-
-- (NSDictionary *)toNSDictionary;
-
-@end
-
-@implementation ActiveWindowInformation
-
-@synthesize title = _title;
-@synthesize path = _path;
-
-- (void)setTitle:(NSString *)title
-{
-    if (title == _title) return;
-    _title = title;
-}
-
-- (NSString *)title
-{
-    return _title == nil ? @"" : _title;
-}
-
-- (void)setPath:(NSString *)path
-{
-    if (path == _path) return;
-    _path = path;
-}
-
-- (NSString *)path
-{
-    return _path == nil ? @"" : _path;
-}
-
-- (NSDictionary *)toNSDictionary
-{
-    return @{
-             @"bundleURL": _bundleURL,
-             @"bundleIdentifier": _bundleIdentifier,
-             @"executableURL": _executableURL,
-             @"localizedName": _localizedName,
-             @"processIdentifier": [NSNumber numberWithInteger:_processIdentifier],
-             @"title": self.title,
-             @"path": self.path,
-             };
-}
-
-@end
-
-ActiveWindowInformation *_getActiveWindowInformation() {
+WindowInformation *_getActiveWindowInformation() {
     __block NSRunningApplication *activeApplication;
     __block NSDictionary *activeWindow;
     
@@ -91,15 +36,21 @@ ActiveWindowInformation *_getActiveWindowInformation() {
         }
     }];
     
-    ActiveWindowInformation *activeWindowInformation = [ActiveWindowInformation new];
-    activeWindowInformation.bundleURL = activeApplication.bundleURL;
-    activeWindowInformation.bundleIdentifier = activeApplication.bundleIdentifier;
-    activeWindowInformation.executableURL = activeApplication.executableURL;
-    activeWindowInformation.localizedName = activeApplication.localizedName;
-    activeWindowInformation.processIdentifier = activeApplication.processIdentifier;
+    WindowInformation *windowInformation = [WindowInformation new];
+    windowInformation.bundleURL = activeApplication.bundleURL;
+    windowInformation.bundleIdentifier = activeApplication.bundleIdentifier;
+    windowInformation.executableURL = activeApplication.executableURL;
+    windowInformation.localizedName = activeApplication.localizedName;
+    windowInformation.processIdentifier = activeApplication.processIdentifier;
     
-    return activeWindowInformation;
+    return windowInformation;
 }
+
+@interface TimeTrackingController ()
+
+@property (nonatomic, strong) dispatch_source_t timer;
+
+@end
 
 @implementation TimeTrackingController
 
@@ -133,13 +84,26 @@ ActiveWindowInformation *_getActiveWindowInformation() {
 
 - (void)_enableTracking
 {
-    ActiveWindowInformation *windowInformation = _getActiveWindowInformation();
-    NSLog(@"%@", [windowInformation toNSDictionary]);
+    [self _disableTracking];
+    dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
+    _timer = dispatch_source_create(DISPATCH_SOURCE_TYPE_TIMER, 0, 0, queue);
+    double interval = 1.000f;
+    if (_timer) {
+        dispatch_source_set_timer(_timer, dispatch_time(DISPATCH_TIME_NOW, interval * NSEC_PER_SEC), interval * NSEC_PER_SEC, (1ull * NSEC_PER_SEC) / 10);
+        dispatch_source_set_event_handler(_timer, ^{
+            WindowInformation *windowInformation = _getActiveWindowInformation();
+            NSLog(@"%@", [windowInformation toNSDictionary]);
+        });
+        dispatch_resume(_timer);
+    }
 }
 
 - (void)_disableTracking
 {
-    
+    if (_timer) {
+        dispatch_source_cancel(_timer);
+        _timer = nil;
+    }
 }
 
 - (int)temp
@@ -148,7 +112,7 @@ ActiveWindowInformation *_getActiveWindowInformation() {
         return 1;
     }
     
-    ActiveWindowInformation *windowInformation = _getActiveWindowInformation();
+    WindowInformation *windowInformation = _getActiveWindowInformation();
     NSLog(@"%@", windowInformation);
     
     PrivacyConsentState consentState = [[PrivacyConsentController sharedController] cachedAutomationConsentForBundleIdentifier:windowInformation.bundleIdentifier
