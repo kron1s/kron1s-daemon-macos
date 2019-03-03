@@ -1,5 +1,5 @@
 //
-//  UserPreferencePersistent.h
+//  UserPreferencePersistence.h
 //  kron1s-daemon-macos
 //
 //  Created by Yuanzhe Bian on 3/1/19.
@@ -11,7 +11,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface UserPreferencePersistent : NSObject
+@interface UserPreferencePersistence : NSObject
 + (instancetype)sharedController;
 
 - (void)setTrackingEnabled:(BOOL)trackingEnabled;

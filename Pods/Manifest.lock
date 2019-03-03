@@ -1,20 +1,26 @@
 PODS:
+  - FMDB (2.7.5):
+    - FMDB/standard (= 2.7.5)
+  - FMDB/standard (2.7.5)
   - ITSwitch (1.0)
   - KVOController (1.2.0)
 
 DEPENDENCIES:
+  - FMDB
   - ITSwitch (~> 1.0)
   - KVOController
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
+    - FMDB
     - ITSwitch
     - KVOController
 
 SPEC CHECKSUMS:
+  FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
   ITSwitch: 7ff745d6f2a6910e9194b23e4eab9a843258a478
   KVOController: d72ace34afea42468329623b3379ab3cd1d286b6
 
-PODFILE CHECKSUM: f6cb57430e7febbb5b4e25c6d4194fd6a0f1bc6e
+PODFILE CHECKSUM: 8fc9219cf5bd4242a166c1cb75cc81b463a28b33
 
 COCOAPODS: 1.5.0

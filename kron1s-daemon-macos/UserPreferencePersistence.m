@@ -1,29 +1,29 @@
 //
-//  UserPreferencePersistent.m
+//  UserPreferencePersistence.m
 //  kron1s-daemon-macos
 //
 //  Created by Yuanzhe Bian on 3/1/19.
 //  Copyright © 2019 Rijn. All rights reserved.
 //
 
-#import "UserPreferencePersistent.h"
+#import "UserPreferencePersistence.h"
 
 static NSString* const kTrackingEnabledKey = @"TRACKING_ENABLED";
 
-@interface UserPreferencePersistent ()
+@interface UserPreferencePersistence ()
 
 @property (nonatomic, assign) BOOL trackingEnabled;
 
 @end
 
-@implementation UserPreferencePersistent
+@implementation UserPreferencePersistence
 
 @synthesize trackingEnabled = _trackingEnabled;
 
 + (instancetype)sharedController
 {
     static dispatch_once_t once;
-    static UserPreferencePersistent *sharedController;
+    static UserPreferencePersistence *sharedController;
     dispatch_once(&once, ^{
         sharedController = [[self alloc] init];
     });

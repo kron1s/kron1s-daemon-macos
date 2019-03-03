@@ -12,7 +12,7 @@
 #import <ScriptingBridge/ScriptingBridge.h>
 
 #import "PrivacyConsentController.h"
-#import "UserPreferencePersistent.h"
+#import "UserPreferencePersistence.h"
 
 @interface ActiveWindowInformation : NSObject
 
@@ -116,7 +116,7 @@ ActiveWindowInformation *_getActiveWindowInformation() {
 - (instancetype)init
 {
     if (self = [super init]) {
-        [self.KVOController observe:[UserPreferencePersistent sharedController]
+        [self.KVOController observe:[UserPreferencePersistence sharedController]
                             keyPath:@"trackingEnabled"
                             options:NSKeyValueObservingOptionNew | NSKeyValueObservingOptionInitial
                               block:^(id  _Nullable observer, id  _Nonnull object, NSDictionary<NSString *,id> * _Nonnull change) {

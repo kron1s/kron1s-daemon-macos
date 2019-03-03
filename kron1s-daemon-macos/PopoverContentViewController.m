@@ -12,7 +12,7 @@
 #import <AppKit/AppKit.h>
 #import <ITSwitch/ITSwitch.h>
 
-#import "UserPreferencePersistent.h"
+#import "UserPreferencePersistence.h"
 
 @interface PopoverContentViewController ()
 
@@ -65,7 +65,7 @@
     [_promptLabel setAlignment:NSTextAlignmentCenter];
     [self.view addSubview:_promptLabel];
     
-    [self.KVOController observe:[UserPreferencePersistent sharedController]
+    [self.KVOController observe:[UserPreferencePersistence sharedController]
                         keyPath:@"trackingEnabled"
                         options:NSKeyValueObservingOptionNew | NSKeyValueObservingOptionInitial
                           block:^(id  _Nullable observer, id  _Nonnull object, NSDictionary<NSString *,id> * _Nonnull change) {
@@ -80,7 +80,7 @@
 
 - (void)toggleActivateTrackingSwitch:(id)sender
 {
-    [[UserPreferencePersistent sharedController] setTrackingEnabled:_activateTrackingSwitch.checked];
+    [[UserPreferencePersistence sharedController] setTrackingEnabled:_activateTrackingSwitch.checked];
 }
 
 - (void)_enableTracking

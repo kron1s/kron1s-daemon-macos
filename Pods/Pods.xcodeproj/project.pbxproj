@@ -7,28 +7,47 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0CBD20018975C1B75479850BB62092D9 /* FBKVOController.h in Headers */ = {isa = PBXBuildFile; fileRef = E75DCFAFAA676DACCDDC599B52C6DA5A /* FBKVOController.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		3F3417A69DB94F64B5BD1D8549AD756A /* KVOController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C91B23C61F1AB93BE3BF6BCDBEC689C2 /* KVOController-dummy.m */; };
-		6D998D69E1E18B4D217921A318CBEE0D /* NSObject+FBKVOController.m in Sources */ = {isa = PBXBuildFile; fileRef = C11B159CBE9DC4146C7D2C00E28669FB /* NSObject+FBKVOController.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		6E829D3E7D385693EC6386EFA08EC0F1 /* KVOController.h in Headers */ = {isa = PBXBuildFile; fileRef = 2E379031A2770440FE7697D985DB55BB /* KVOController.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		807AF160C40CD764B40840E51AA8B65A /* FBKVOController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9EAEA3752B4F07193EDE204A5E6D8EE /* FBKVOController.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		95788563F2EABFDACBCB419E26529EE6 /* ITSwitch.h in Headers */ = {isa = PBXBuildFile; fileRef = CE43202E35288DF063EFE39B78DD21A7 /* ITSwitch.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		B5FC086CB1F65CCCD20BDB2F32CDDEE8 /* Pods-kron1s-daemon-macos-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 425D6D894256BE5B01F4B2C6C3278949 /* Pods-kron1s-daemon-macos-dummy.m */; };
-		BE24DF72CE6AB8AD8B9187660BD673E0 /* ITSwitch-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C36EE03482EC02DE82D5A84331F665 /* ITSwitch-dummy.m */; };
+		0CBD20018975C1B75479850BB62092D9 /* FBKVOController.h in Headers */ = {isa = PBXBuildFile; fileRef = F8D932300B940C90A7EF5A552F5BAFC4 /* FBKVOController.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		10FB39D107A569FAA4A1F44ED187C2CF /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 96D2FA6E90CF1DBCF417BE14D6DFCD34 /* FMDatabaseAdditions.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		2AB199715E4AFC805E8C6C6E34912611 /* FMDB-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FC3AFC231F01353B4BC308DB2DD3A34 /* FMDB-dummy.m */; };
+		33F2281A6DC35E9BFFB49F5EA361666F /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = AB433DB626D7BA2466474BF7A8250357 /* FMDatabasePool.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		3F3417A69DB94F64B5BD1D8549AD756A /* KVOController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 681B3D508E85AE54D2EBE808F580661A /* KVOController-dummy.m */; };
+		58BB7511BF03831AB27EBEB0EDF00627 /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 73F7E9AB86059DC26A8F51DB88768E50 /* FMDatabaseQueue.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		632AB28A4DB6B8139B64D8416E6665C0 /* Pods-kron1s-daemon-macos-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 425D6D894256BE5B01F4B2C6C3278949 /* Pods-kron1s-daemon-macos-dummy.m */; };
+		6B64AE43A08C2A738EC4E8947C898405 /* FMDatabase.h in Headers */ = {isa = PBXBuildFile; fileRef = 047DDA1AEA26103ACC0A874D62D07344 /* FMDatabase.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		6D998D69E1E18B4D217921A318CBEE0D /* NSObject+FBKVOController.m in Sources */ = {isa = PBXBuildFile; fileRef = 53ACE5BC32C622EB55A0ACE623B8F1A7 /* NSObject+FBKVOController.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		6E829D3E7D385693EC6386EFA08EC0F1 /* KVOController.h in Headers */ = {isa = PBXBuildFile; fileRef = 6904674E974B5BA8B1C020DC0CF79447 /* KVOController.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		807AF160C40CD764B40840E51AA8B65A /* FBKVOController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BDEB82D4A8E8B838E4406589FDDBD67 /* FBKVOController.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		8E319CDBE03E12D315B280F378D90AAE /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 71227E9F72B6D1ECD56923506A610859 /* FMResultSet.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		95788563F2EABFDACBCB419E26529EE6 /* ITSwitch.h in Headers */ = {isa = PBXBuildFile; fileRef = 941C7CC0B421711ACC8A1A5C9DB67993 /* ITSwitch.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		A7E84E3E02AA15605C36892AEFE6F300 /* FMResultSet.h in Headers */ = {isa = PBXBuildFile; fileRef = 8BAE341F7EE985C1A4CC24C63D41C4A9 /* FMResultSet.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		BC9B764C70B0B76CBAC3FC8A757E02DC /* FMDatabaseAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = B39BD243D4FB1C230688CA20CFF41995 /* FMDatabaseAdditions.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		BE24DF72CE6AB8AD8B9187660BD673E0 /* ITSwitch-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EC71A481559BAC80C71873FAE6900ADC /* ITSwitch-dummy.m */; };
+		C32363AF2C2D8CAE297D23043076A95D /* FMDB.h in Headers */ = {isa = PBXBuildFile; fileRef = C70D1679FFE2B1190042F8882D17F4BE /* FMDB.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		C6F553548334201A17AAFC91222D1416 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34218CEECDEFAC472CB8108D7E3F553D /* QuartzCore.framework */; };
-		E673699079ADF3ACD8D4AE9829CC412A /* NSObject+FBKVOController.h in Headers */ = {isa = PBXBuildFile; fileRef = 7BE3C71781CF6491EB83DCE7D39C846E /* NSObject+FBKVOController.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		FB8ABD0054F54212515104EBC2443D6B /* ITSwitch.m in Sources */ = {isa = PBXBuildFile; fileRef = 764B0C2B7A055A518E9050C77CC3AA6A /* ITSwitch.m */; };
+		DA6F503BEBC3631865C9B1D0EF40878A /* FMDatabasePool.h in Headers */ = {isa = PBXBuildFile; fileRef = 986BC1FE68024A9F4BE417215AFFF695 /* FMDatabasePool.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		E3A8EA7C937BFDAA2B53C5F2188B67D8 /* FMDatabaseQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = 48EE1F5707CDF0DA76C9E7EEAE024FBE /* FMDatabaseQueue.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		E673699079ADF3ACD8D4AE9829CC412A /* NSObject+FBKVOController.h in Headers */ = {isa = PBXBuildFile; fileRef = FED8B77F7D68EF59EAF314ADED483729 /* NSObject+FBKVOController.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		F3ED09C94A17BE53C682DE3B1022D85D /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 552D847FCCAE00952497169BBD983CD7 /* FMDatabase.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		FB8ABD0054F54212515104EBC2443D6B /* ITSwitch.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C3CF83259F6998D977F6BCC4303EB83 /* ITSwitch.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		056F57C3ACF0A5B59A2FC1B469C37D5E /* PBXContainerItemProxy */ = {
+		4DA82EBF41D51EED3ED7608B52BF32A5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 6AF62F9353AE461CA7B458BA26E95D68;
 			remoteInfo = ITSwitch;
 		};
-		8DA0DC15EF9E1029623190FA0A5FE728 /* PBXContainerItemProxy */ = {
+		90EA7E495142E375CA0D865A97CE7A4B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 563CFC01733EEFF7BC491B560ED1DBFA;
+			remoteInfo = FMDB;
+		};
+		EC30B36263FBDD9DE2DA0AACAFE667CB /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
@@ -38,34 +57,56 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		2E379031A2770440FE7697D985DB55BB /* KVOController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KVOController.h; path = FBKVOController/KVOController.h; sourceTree = "<group>"; };
+		00056159739BD92565A5848A2D031E21 /* libITSwitch.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libITSwitch.a; path = libITSwitch.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		047DDA1AEA26103ACC0A874D62D07344 /* FMDatabase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FMDatabase.h; path = src/fmdb/FMDatabase.h; sourceTree = "<group>"; };
+		0BDEB82D4A8E8B838E4406589FDDBD67 /* FBKVOController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBKVOController.m; path = FBKVOController/FBKVOController.m; sourceTree = "<group>"; };
+		187E412DDA6865424476DE336B614EF6 /* FMDB.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FMDB.xcconfig; sourceTree = "<group>"; };
+		19DF09DBB771241DA1A0A408BA830A7B /* libPods-kron1s-daemon-macos.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-kron1s-daemon-macos.a"; path = "libPods-kron1s-daemon-macos.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1C3158484267E4CE9AF5868FF6B67CD2 /* libKVOController.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libKVOController.a; path = libKVOController.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F4723A87DB1C4B7A48F2A1B4CBBF0FE /* Pods-kron1s-daemon-macos.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-kron1s-daemon-macos.debug.xcconfig"; sourceTree = "<group>"; };
 		34218CEECDEFAC472CB8108D7E3F553D /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		3C3CF83259F6998D977F6BCC4303EB83 /* ITSwitch.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ITSwitch.m; path = ITSwitch/ITSwitch.m; sourceTree = "<group>"; };
 		4136C751DA11B387D00CD2C3AF3CDA9E /* Pods-kron1s-daemon-macos-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-kron1s-daemon-macos-frameworks.sh"; sourceTree = "<group>"; };
 		425D6D894256BE5B01F4B2C6C3278949 /* Pods-kron1s-daemon-macos-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-kron1s-daemon-macos-dummy.m"; sourceTree = "<group>"; };
+		48EE1F5707CDF0DA76C9E7EEAE024FBE /* FMDatabaseQueue.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FMDatabaseQueue.h; path = src/fmdb/FMDatabaseQueue.h; sourceTree = "<group>"; };
+		4AE2282CD650B46AC21F5097DF58C1E4 /* KVOController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KVOController-prefix.pch"; sourceTree = "<group>"; };
+		53ACE5BC32C622EB55A0ACE623B8F1A7 /* NSObject+FBKVOController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSObject+FBKVOController.m"; path = "FBKVOController/NSObject+FBKVOController.m"; sourceTree = "<group>"; };
+		552D847FCCAE00952497169BBD983CD7 /* FMDatabase.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FMDatabase.m; path = src/fmdb/FMDatabase.m; sourceTree = "<group>"; };
+		58983B4D1593212A3BBE6B1203C0AB9B /* KVOController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = KVOController.xcconfig; sourceTree = "<group>"; };
 		5AC41446F54EEF39BA97F8DC6F8ED0C0 /* Pods-kron1s-daemon-macos-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-kron1s-daemon-macos-acknowledgements.plist"; sourceTree = "<group>"; };
+		5FC3AFC231F01353B4BC308DB2DD3A34 /* FMDB-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FMDB-dummy.m"; sourceTree = "<group>"; };
 		61DBBB3706FDD842EDB2D6E206749B2D /* Pods-kron1s-daemon-macos-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-kron1s-daemon-macos-acknowledgements.markdown"; sourceTree = "<group>"; };
-		764B0C2B7A055A518E9050C77CC3AA6A /* ITSwitch.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ITSwitch.m; path = ITSwitch/ITSwitch.m; sourceTree = "<group>"; };
+		67A3CAD357B06D3D7E777A8EBCFE9AA9 /* FMDB-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FMDB-prefix.pch"; sourceTree = "<group>"; };
+		681B3D508E85AE54D2EBE808F580661A /* KVOController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "KVOController-dummy.m"; sourceTree = "<group>"; };
+		6904674E974B5BA8B1C020DC0CF79447 /* KVOController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KVOController.h; path = FBKVOController/KVOController.h; sourceTree = "<group>"; };
+		71227E9F72B6D1ECD56923506A610859 /* FMResultSet.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FMResultSet.m; path = src/fmdb/FMResultSet.m; sourceTree = "<group>"; };
+		73F7E9AB86059DC26A8F51DB88768E50 /* FMDatabaseQueue.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FMDatabaseQueue.m; path = src/fmdb/FMDatabaseQueue.m; sourceTree = "<group>"; };
 		79F95AB28E6CD3E23E1D77E445A82CAE /* Pods-kron1s-daemon-macos.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-kron1s-daemon-macos.release.xcconfig"; sourceTree = "<group>"; };
-		7BE3C71781CF6491EB83DCE7D39C846E /* NSObject+FBKVOController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+FBKVOController.h"; path = "FBKVOController/NSObject+FBKVOController.h"; sourceTree = "<group>"; };
-		84A9F9DC36EF5E6B2EEB2F025CC930BA /* ITSwitch.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ITSwitch.xcconfig; sourceTree = "<group>"; };
-		84C36EE03482EC02DE82D5A84331F665 /* ITSwitch-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ITSwitch-dummy.m"; sourceTree = "<group>"; };
-		880924F7351B18496EC6289C1B8652CB /* KVOController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = KVOController.xcconfig; sourceTree = "<group>"; };
+		8BAE341F7EE985C1A4CC24C63D41C4A9 /* FMResultSet.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FMResultSet.h; path = src/fmdb/FMResultSet.h; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		941C7CC0B421711ACC8A1A5C9DB67993 /* ITSwitch.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ITSwitch.h; path = ITSwitch/ITSwitch.h; sourceTree = "<group>"; };
+		96D2FA6E90CF1DBCF417BE14D6DFCD34 /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FMDatabaseAdditions.m; path = src/fmdb/FMDatabaseAdditions.m; sourceTree = "<group>"; };
+		986BC1FE68024A9F4BE417215AFFF695 /* FMDatabasePool.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FMDatabasePool.h; path = src/fmdb/FMDatabasePool.h; sourceTree = "<group>"; };
 		9B2854B65E37C05681EA1125BA85B050 /* Pods-kron1s-daemon-macos-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-kron1s-daemon-macos-resources.sh"; sourceTree = "<group>"; };
-		C11B159CBE9DC4146C7D2C00E28669FB /* NSObject+FBKVOController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSObject+FBKVOController.m"; path = "FBKVOController/NSObject+FBKVOController.m"; sourceTree = "<group>"; };
-		C78DE1952A41CB933A564D63AE4EC794 /* libPods-kron1s-daemon-macos.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-kron1s-daemon-macos.a"; path = "libPods-kron1s-daemon-macos.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		C91B23C61F1AB93BE3BF6BCDBEC689C2 /* KVOController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "KVOController-dummy.m"; sourceTree = "<group>"; };
-		C9EAEA3752B4F07193EDE204A5E6D8EE /* FBKVOController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBKVOController.m; path = FBKVOController/FBKVOController.m; sourceTree = "<group>"; };
-		CE43202E35288DF063EFE39B78DD21A7 /* ITSwitch.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ITSwitch.h; path = ITSwitch/ITSwitch.h; sourceTree = "<group>"; };
-		D442D78F80C5474BF6F9D32484741F5C /* libKVOController.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libKVOController.a; path = libKVOController.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		D44A344E6E88CC5EB2460580571C9BC1 /* ITSwitch-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ITSwitch-prefix.pch"; sourceTree = "<group>"; };
-		E75DCFAFAA676DACCDDC599B52C6DA5A /* FBKVOController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBKVOController.h; path = FBKVOController/FBKVOController.h; sourceTree = "<group>"; };
-		F4D32753B9D23ADB81D1B422035C932B /* KVOController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KVOController-prefix.pch"; sourceTree = "<group>"; };
-		FE98BE039CA47D1A93875B47C63DF4BD /* libITSwitch.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libITSwitch.a; path = libITSwitch.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB433DB626D7BA2466474BF7A8250357 /* FMDatabasePool.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FMDatabasePool.m; path = src/fmdb/FMDatabasePool.m; sourceTree = "<group>"; };
+		B39BD243D4FB1C230688CA20CFF41995 /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FMDatabaseAdditions.h; path = src/fmdb/FMDatabaseAdditions.h; sourceTree = "<group>"; };
+		B9CE8AAC89F2577D320C72DE5374AD55 /* ITSwitch.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ITSwitch.xcconfig; sourceTree = "<group>"; };
+		C70D1679FFE2B1190042F8882D17F4BE /* FMDB.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FMDB.h; path = src/fmdb/FMDB.h; sourceTree = "<group>"; };
+		E02A27C74A4CEEF350FA407D9E86DA88 /* ITSwitch-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ITSwitch-prefix.pch"; sourceTree = "<group>"; };
+		EBD1049FA54826D9536D3C674200717D /* libFMDB.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libFMDB.a; path = libFMDB.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC71A481559BAC80C71873FAE6900ADC /* ITSwitch-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ITSwitch-dummy.m"; sourceTree = "<group>"; };
+		F8D932300B940C90A7EF5A552F5BAFC4 /* FBKVOController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBKVOController.h; path = FBKVOController/FBKVOController.h; sourceTree = "<group>"; };
+		FED8B77F7D68EF59EAF314ADED483729 /* NSObject+FBKVOController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+FBKVOController.h"; path = "FBKVOController/NSObject+FBKVOController.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		0A89A9E587106BDB220F2668B77F4C3A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7E2631B8480D031313B92F8B25F853E0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -73,7 +114,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B9178DA224E322E413ACBE4836DB001F /* Frameworks */ = {
+		D63A784EEB309CB120FA2364672B6365 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -91,27 +132,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		32C168E4799F046E72C1E793076301EC /* Pods */ = {
+		01B15E54C5832DDC9678FB47BBAC6B0C /* standard */ = {
 			isa = PBXGroup;
 			children = (
-				92FF8A2DFD660D9707D7266E3C405180 /* ITSwitch */,
-				347B7EDB12F319E8B7F7658C520533C5 /* KVOController */,
+				047DDA1AEA26103ACC0A874D62D07344 /* FMDatabase.h */,
+				552D847FCCAE00952497169BBD983CD7 /* FMDatabase.m */,
+				B39BD243D4FB1C230688CA20CFF41995 /* FMDatabaseAdditions.h */,
+				96D2FA6E90CF1DBCF417BE14D6DFCD34 /* FMDatabaseAdditions.m */,
+				986BC1FE68024A9F4BE417215AFFF695 /* FMDatabasePool.h */,
+				AB433DB626D7BA2466474BF7A8250357 /* FMDatabasePool.m */,
+				48EE1F5707CDF0DA76C9E7EEAE024FBE /* FMDatabaseQueue.h */,
+				73F7E9AB86059DC26A8F51DB88768E50 /* FMDatabaseQueue.m */,
+				C70D1679FFE2B1190042F8882D17F4BE /* FMDB.h */,
+				8BAE341F7EE985C1A4CC24C63D41C4A9 /* FMResultSet.h */,
+				71227E9F72B6D1ECD56923506A610859 /* FMResultSet.m */,
 			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		347B7EDB12F319E8B7F7658C520533C5 /* KVOController */ = {
-			isa = PBXGroup;
-			children = (
-				E75DCFAFAA676DACCDDC599B52C6DA5A /* FBKVOController.h */,
-				C9EAEA3752B4F07193EDE204A5E6D8EE /* FBKVOController.m */,
-				2E379031A2770440FE7697D985DB55BB /* KVOController.h */,
-				7BE3C71781CF6491EB83DCE7D39C846E /* NSObject+FBKVOController.h */,
-				C11B159CBE9DC4146C7D2C00E28669FB /* NSObject+FBKVOController.m */,
-				70BCEAAEF746949B36031047691DA0F7 /* Support Files */,
-			);
-			name = KVOController;
-			path = KVOController;
+			name = standard;
 			sourceTree = "<group>";
 		};
 		39E9EE8210D861DFD82346C1F5EB7218 /* Frameworks */ = {
@@ -122,15 +158,26 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		70BCEAAEF746949B36031047691DA0F7 /* Support Files */ = {
+		4BFD60FCA35E1A4FBC4828F7EFC3AD25 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				880924F7351B18496EC6289C1B8652CB /* KVOController.xcconfig */,
-				C91B23C61F1AB93BE3BF6BCDBEC689C2 /* KVOController-dummy.m */,
-				F4D32753B9D23ADB81D1B422035C932B /* KVOController-prefix.pch */,
+				EBD1049FA54826D9536D3C674200717D /* libFMDB.a */,
+				00056159739BD92565A5848A2D031E21 /* libITSwitch.a */,
+				1C3158484267E4CE9AF5868FF6B67CD2 /* libKVOController.a */,
+				19DF09DBB771241DA1A0A408BA830A7B /* libPods-kron1s-daemon-macos.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		57366988E5ADC4152DD4BD92BEC2948B /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B9CE8AAC89F2577D320C72DE5374AD55 /* ITSwitch.xcconfig */,
+				EC71A481559BAC80C71873FAE6900ADC /* ITSwitch-dummy.m */,
+				E02A27C74A4CEEF350FA407D9E86DA88 /* ITSwitch-prefix.pch */,
 			);
 			name = "Support Files";
-			path = "../Target Support Files/KVOController";
+			path = "../Target Support Files/ITSwitch";
 			sourceTree = "<group>";
 		};
 		70FA24F31E89265FF488450619F1757C /* Pods-kron1s-daemon-macos */ = {
@@ -148,13 +195,24 @@
 			path = "Target Support Files/Pods-kron1s-daemon-macos";
 			sourceTree = "<group>";
 		};
+		7B8972117CD64F63A8131B5737E861BA /* ITSwitch */ = {
+			isa = PBXGroup;
+			children = (
+				941C7CC0B421711ACC8A1A5C9DB67993 /* ITSwitch.h */,
+				3C3CF83259F6998D977F6BCC4303EB83 /* ITSwitch.m */,
+				57366988E5ADC4152DD4BD92BEC2948B /* Support Files */,
+			);
+			name = ITSwitch;
+			path = ITSwitch;
+			sourceTree = "<group>";
+		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				39E9EE8210D861DFD82346C1F5EB7218 /* Frameworks */,
-				32C168E4799F046E72C1E793076301EC /* Pods */,
-				D22EAE35BBAD2C4AD9C41DFF809698C2 /* Products */,
+				BC1650EFA8D7AEC26A9ABFA2D66D7BDA /* Pods */,
+				4BFD60FCA35E1A4FBC4828F7EFC3AD25 /* Products */,
 				8102718AC8715A5F2496FABDF6E42D2C /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
@@ -167,26 +225,35 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		8E1940741A88198C405284B3D798C6D2 /* Support Files */ = {
+		89437ABF9716DFAFDBB620A0271ED94E /* FMDB */ = {
 			isa = PBXGroup;
 			children = (
-				84A9F9DC36EF5E6B2EEB2F025CC930BA /* ITSwitch.xcconfig */,
-				84C36EE03482EC02DE82D5A84331F665 /* ITSwitch-dummy.m */,
-				D44A344E6E88CC5EB2460580571C9BC1 /* ITSwitch-prefix.pch */,
+				01B15E54C5832DDC9678FB47BBAC6B0C /* standard */,
+				EC51B0C663E12476F632165DC120503F /* Support Files */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/ITSwitch";
+			name = FMDB;
+			path = FMDB;
 			sourceTree = "<group>";
 		};
-		92FF8A2DFD660D9707D7266E3C405180 /* ITSwitch */ = {
+		9DE121BFEB047C2609C881427CB5C6C4 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				CE43202E35288DF063EFE39B78DD21A7 /* ITSwitch.h */,
-				764B0C2B7A055A518E9050C77CC3AA6A /* ITSwitch.m */,
-				8E1940741A88198C405284B3D798C6D2 /* Support Files */,
+				58983B4D1593212A3BBE6B1203C0AB9B /* KVOController.xcconfig */,
+				681B3D508E85AE54D2EBE808F580661A /* KVOController-dummy.m */,
+				4AE2282CD650B46AC21F5097DF58C1E4 /* KVOController-prefix.pch */,
 			);
-			name = ITSwitch;
-			path = ITSwitch;
+			name = "Support Files";
+			path = "../Target Support Files/KVOController";
+			sourceTree = "<group>";
+		};
+		BC1650EFA8D7AEC26A9ABFA2D66D7BDA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				89437ABF9716DFAFDBB620A0271ED94E /* FMDB */,
+				7B8972117CD64F63A8131B5737E861BA /* ITSwitch */,
+				F4ED513A63438A4B5411AF54DBEDEB51 /* KVOController */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		BCDC58841F2D4723BDCD5CA64F05BBF2 /* OS X */ = {
@@ -197,26 +264,34 @@
 			name = "OS X";
 			sourceTree = "<group>";
 		};
-		D22EAE35BBAD2C4AD9C41DFF809698C2 /* Products */ = {
+		EC51B0C663E12476F632165DC120503F /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				FE98BE039CA47D1A93875B47C63DF4BD /* libITSwitch.a */,
-				D442D78F80C5474BF6F9D32484741F5C /* libKVOController.a */,
-				C78DE1952A41CB933A564D63AE4EC794 /* libPods-kron1s-daemon-macos.a */,
+				187E412DDA6865424476DE336B614EF6 /* FMDB.xcconfig */,
+				5FC3AFC231F01353B4BC308DB2DD3A34 /* FMDB-dummy.m */,
+				67A3CAD357B06D3D7E777A8EBCFE9AA9 /* FMDB-prefix.pch */,
 			);
-			name = Products;
+			name = "Support Files";
+			path = "../Target Support Files/FMDB";
+			sourceTree = "<group>";
+		};
+		F4ED513A63438A4B5411AF54DBEDEB51 /* KVOController */ = {
+			isa = PBXGroup;
+			children = (
+				F8D932300B940C90A7EF5A552F5BAFC4 /* FBKVOController.h */,
+				0BDEB82D4A8E8B838E4406589FDDBD67 /* FBKVOController.m */,
+				6904674E974B5BA8B1C020DC0CF79447 /* KVOController.h */,
+				FED8B77F7D68EF59EAF314ADED483729 /* NSObject+FBKVOController.h */,
+				53ACE5BC32C622EB55A0ACE623B8F1A7 /* NSObject+FBKVOController.m */,
+				9DE121BFEB047C2609C881427CB5C6C4 /* Support Files */,
+			);
+			name = KVOController;
+			path = KVOController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		1CF9F4BC6267DC9E0957A37358E8C2E2 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		7EED85F997D66CCFD6DB5F4434B4B497 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -235,9 +310,66 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A9823EDF374897AAE6DE3C6C996A1A23 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6B64AE43A08C2A738EC4E8947C898405 /* FMDatabase.h in Headers */,
+				BC9B764C70B0B76CBAC3FC8A757E02DC /* FMDatabaseAdditions.h in Headers */,
+				DA6F503BEBC3631865C9B1D0EF40878A /* FMDatabasePool.h in Headers */,
+				E3A8EA7C937BFDAA2B53C5F2188B67D8 /* FMDatabaseQueue.h in Headers */,
+				C32363AF2C2D8CAE297D23043076A95D /* FMDB.h in Headers */,
+				A7E84E3E02AA15605C36892AEFE6F300 /* FMResultSet.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D78F1DF80D80F2824EDB2EAD09F641C8 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		48986927965822D8D75EA6950165D974 /* Pods-kron1s-daemon-macos */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 122A109BAF2658FDA408F0CB034757E9 /* Build configuration list for PBXNativeTarget "Pods-kron1s-daemon-macos" */;
+			buildPhases = (
+				D78F1DF80D80F2824EDB2EAD09F641C8 /* Headers */,
+				2AA904FE25C6BFAFC6B9799AE162759A /* Sources */,
+				0A89A9E587106BDB220F2668B77F4C3A /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				46903218F5BA1DB97ECE4FEBEDCE958D /* PBXTargetDependency */,
+				8BE4AEBDD83BB3A29131D5E51CE250B5 /* PBXTargetDependency */,
+				26AF511DA5E6303F101675CAF4B2443F /* PBXTargetDependency */,
+			);
+			name = "Pods-kron1s-daemon-macos";
+			productName = "Pods-kron1s-daemon-macos";
+			productReference = 19DF09DBB771241DA1A0A408BA830A7B /* libPods-kron1s-daemon-macos.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		563CFC01733EEFF7BC491B560ED1DBFA /* FMDB */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3428FA9D8846C35F2A42E9A088626AD1 /* Build configuration list for PBXNativeTarget "FMDB" */;
+			buildPhases = (
+				A9823EDF374897AAE6DE3C6C996A1A23 /* Headers */,
+				C0EC4BA12BBD05AECF72FABE34B5F57D /* Sources */,
+				D63A784EEB309CB120FA2364672B6365 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FMDB;
+			productName = FMDB;
+			productReference = EBD1049FA54826D9536D3C674200717D /* libFMDB.a */;
+			productType = "com.apple.product-type.library.static";
+		};
 		6AF62F9353AE461CA7B458BA26E95D68 /* ITSwitch */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 83BCD2EEE2455FC8E000E65BA406C58F /* Build configuration list for PBXNativeTarget "ITSwitch" */;
@@ -252,26 +384,7 @@
 			);
 			name = ITSwitch;
 			productName = ITSwitch;
-			productReference = FE98BE039CA47D1A93875B47C63DF4BD /* libITSwitch.a */;
-			productType = "com.apple.product-type.library.static";
-		};
-		B3CBA36B952300F56FEAED8BF4E12ECF /* Pods-kron1s-daemon-macos */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 9375371B2303BCE078FD8A970284718C /* Build configuration list for PBXNativeTarget "Pods-kron1s-daemon-macos" */;
-			buildPhases = (
-				1CF9F4BC6267DC9E0957A37358E8C2E2 /* Headers */,
-				60ABFB45C82DB0D90E4D458B54794B03 /* Sources */,
-				B9178DA224E322E413ACBE4836DB001F /* Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				0B925B4ACF9959DE9AEE6903232CE397 /* PBXTargetDependency */,
-				9B74E4E4AB1BD9320D2A1BA2FCFB21C9 /* PBXTargetDependency */,
-			);
-			name = "Pods-kron1s-daemon-macos";
-			productName = "Pods-kron1s-daemon-macos";
-			productReference = C78DE1952A41CB933A564D63AE4EC794 /* libPods-kron1s-daemon-macos.a */;
+			productReference = 00056159739BD92565A5848A2D031E21 /* libITSwitch.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		C8157C2469E165A1C76D8368A5140C47 /* KVOController */ = {
@@ -288,7 +401,7 @@
 			);
 			name = KVOController;
 			productName = KVOController;
-			productReference = D442D78F80C5474BF6F9D32484741F5C /* libKVOController.a */;
+			productReference = 1C3158484267E4CE9AF5868FF6B67CD2 /* libKVOController.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
@@ -308,23 +421,24 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = D22EAE35BBAD2C4AD9C41DFF809698C2 /* Products */;
+			productRefGroup = 4BFD60FCA35E1A4FBC4828F7EFC3AD25 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
+				563CFC01733EEFF7BC491B560ED1DBFA /* FMDB */,
 				6AF62F9353AE461CA7B458BA26E95D68 /* ITSwitch */,
 				C8157C2469E165A1C76D8368A5140C47 /* KVOController */,
-				B3CBA36B952300F56FEAED8BF4E12ECF /* Pods-kron1s-daemon-macos */,
+				48986927965822D8D75EA6950165D974 /* Pods-kron1s-daemon-macos */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		60ABFB45C82DB0D90E4D458B54794B03 /* Sources */ = {
+		2AA904FE25C6BFAFC6B9799AE162759A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B5FC086CB1F65CCCD20BDB2F32CDDEE8 /* Pods-kron1s-daemon-macos-dummy.m in Sources */,
+				632AB28A4DB6B8139B64D8416E6665C0 /* Pods-kron1s-daemon-macos-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -334,6 +448,19 @@
 			files = (
 				BE24DF72CE6AB8AD8B9187660BD673E0 /* ITSwitch-dummy.m in Sources */,
 				FB8ABD0054F54212515104EBC2443D6B /* ITSwitch.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0EC4BA12BBD05AECF72FABE34B5F57D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3ED09C94A17BE53C682DE3B1022D85D /* FMDatabase.m in Sources */,
+				10FB39D107A569FAA4A1F44ED187C2CF /* FMDatabaseAdditions.m in Sources */,
+				33F2281A6DC35E9BFFB49F5EA361666F /* FMDatabasePool.m in Sources */,
+				58BB7511BF03831AB27EBEB0EDF00627 /* FMDatabaseQueue.m in Sources */,
+				2AB199715E4AFC805E8C6C6E34912611 /* FMDB-dummy.m in Sources */,
+				8E319CDBE03E12D315B280F378D90AAE /* FMResultSet.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -350,46 +477,78 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		0B925B4ACF9959DE9AEE6903232CE397 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = ITSwitch;
-			target = 6AF62F9353AE461CA7B458BA26E95D68 /* ITSwitch */;
-			targetProxy = 056F57C3ACF0A5B59A2FC1B469C37D5E /* PBXContainerItemProxy */;
-		};
-		9B74E4E4AB1BD9320D2A1BA2FCFB21C9 /* PBXTargetDependency */ = {
+		26AF511DA5E6303F101675CAF4B2443F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = KVOController;
 			target = C8157C2469E165A1C76D8368A5140C47 /* KVOController */;
-			targetProxy = 8DA0DC15EF9E1029623190FA0A5FE728 /* PBXContainerItemProxy */;
+			targetProxy = EC30B36263FBDD9DE2DA0AACAFE667CB /* PBXContainerItemProxy */;
+		};
+		46903218F5BA1DB97ECE4FEBEDCE958D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FMDB;
+			target = 563CFC01733EEFF7BC491B560ED1DBFA /* FMDB */;
+			targetProxy = 90EA7E495142E375CA0D865A97CE7A4B /* PBXContainerItemProxy */;
+		};
+		8BE4AEBDD83BB3A29131D5E51CE250B5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ITSwitch;
+			target = 6AF62F9353AE461CA7B458BA26E95D68 /* ITSwitch */;
+			targetProxy = 4DA82EBF41D51EED3ED7608B52BF32A5 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		040CAF989AD1FA25A2B1B5BCD9DB5C58 /* Debug */ = {
+		05BF95EB756DAE6F6D2C6479414BA8D0 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2F4723A87DB1C4B7A48F2A1B4CBBF0FE /* Pods-kron1s-daemon-macos.debug.xcconfig */;
+			baseConfigurationReference = 187E412DDA6865424476DE336B614EF6 /* FMDB.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "-";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				EXECUTABLE_PREFIX = lib;
-				MACH_O_TYPE = staticlib;
-				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				GCC_PREFIX_HEADER = "Target Support Files/FMDB/FMDB-prefix.pch";
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = FMDB;
+				PRODUCT_NAME = FMDB;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 			};
 			name = Debug;
 		};
+		3E2AEBFCC6385E34BA06509F77ADD827 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 187E412DDA6865424476DE336B614EF6 /* FMDB.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				EXECUTABLE_PREFIX = lib;
+				GCC_PREFIX_HEADER = "Target Support Files/FMDB/FMDB-prefix.pch";
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = FMDB;
+				PRODUCT_NAME = FMDB;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+			};
+			name = Release;
+		};
 		557B48D4DB7428971D04E93ADE986F62 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 84A9F9DC36EF5E6B2EEB2F025CC930BA /* ITSwitch.xcconfig */;
+			baseConfigurationReference = B9CE8AAC89F2577D320C72DE5374AD55 /* ITSwitch.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "-";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -412,7 +571,7 @@
 		};
 		5648443475C842CDE10C0C881FF36C95 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 880924F7351B18496EC6289C1B8652CB /* KVOController.xcconfig */;
+			baseConfigurationReference = 58983B4D1593212A3BBE6B1203C0AB9B /* KVOController.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "-";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -433,9 +592,31 @@
 			};
 			name = Debug;
 		};
+		6926F0D03161E94622DCA6D1269D16DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2F4723A87DB1C4B7A48F2A1B4CBBF0FE /* Pods-kron1s-daemon-macos.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				EXECUTABLE_PREFIX = lib;
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
 		7EFB2D35359456D646B0926C7E650534 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 880924F7351B18496EC6289C1B8652CB /* KVOController.xcconfig */;
+			baseConfigurationReference = 58983B4D1593212A3BBE6B1203C0AB9B /* KVOController.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "-";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -515,7 +696,7 @@
 			};
 			name = Release;
 		};
-		C662956DBB77B8751906A8321F9B116A /* Release */ = {
+		B0C39B579EA2C413097F2F3ABA459097 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 79F95AB28E6CD3E23E1D77E445A82CAE /* Pods-kron1s-daemon-macos.release.xcconfig */;
 			buildSettings = {
@@ -603,7 +784,7 @@
 		};
 		DE11DB80D388252F7B9992D8547152A4 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 84A9F9DC36EF5E6B2EEB2F025CC930BA /* ITSwitch.xcconfig */;
+			baseConfigurationReference = B9CE8AAC89F2577D320C72DE5374AD55 /* ITSwitch.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "-";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -627,6 +808,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		122A109BAF2658FDA408F0CB034757E9 /* Build configuration list for PBXNativeTarget "Pods-kron1s-daemon-macos" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6926F0D03161E94622DCA6D1269D16DB /* Debug */,
+				B0C39B579EA2C413097F2F3ABA459097 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -636,20 +826,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		3428FA9D8846C35F2A42E9A088626AD1 /* Build configuration list for PBXNativeTarget "FMDB" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				05BF95EB756DAE6F6D2C6479414BA8D0 /* Debug */,
+				3E2AEBFCC6385E34BA06509F77ADD827 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		83BCD2EEE2455FC8E000E65BA406C58F /* Build configuration list for PBXNativeTarget "ITSwitch" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				557B48D4DB7428971D04E93ADE986F62 /* Debug */,
 				DE11DB80D388252F7B9992D8547152A4 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		9375371B2303BCE078FD8A970284718C /* Build configuration list for PBXNativeTarget "Pods-kron1s-daemon-macos" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				040CAF989AD1FA25A2B1B5BCD9DB5C58 /* Debug */,
-				C662956DBB77B8751906A8321F9B116A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

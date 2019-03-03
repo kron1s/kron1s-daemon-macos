@@ -9,21 +9,28 @@
 #import "AppDelegate.h"
 
 #import "StatusBarController.h"
-#import "UserPreferencePersistent.h"
+#import "UserPreferencePersistence.h"
 #import "TimeTrackingController.h"
+#import "TimeTrackingPersistence.h"
 
 @interface AppDelegate ()
 
 @property (weak) IBOutlet NSWindow *window;
+
+@property (retain) StatusBarController *statusBarController;
+@property (retain) UserPreferencePersistence *userPreferencePersistence;
+@property (retain) TimeTrackingController *timeTrackingController;
+@property (retain) TimeTrackingPersistence *timeTrackingPersistence;
 
 @end
 
 @implementation AppDelegate
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
-    (void)[UserPreferencePersistent sharedController];
-    (void)[StatusBarController sharedController];
-    (void)[TimeTrackingController sharedController];
+    _userPreferencePersistence = [UserPreferencePersistence new];
+    _statusBarController = [StatusBarController new];
+    _timeTrackingController = [TimeTrackingController new];
+    _timeTrackingPersistence = [TimeTrackingPersistence new];
 }
 
 
