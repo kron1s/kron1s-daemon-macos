@@ -8,9 +8,13 @@
 
 #import <Foundation/Foundation.h>
 
+#import "WindowInformation+WindowInformationRecord.h"
+
 NS_ASSUME_NONNULL_BEGIN
 
 @interface TimeTrackingPersistence : NSObject
+
+- (void)pushWindowInformationRecord:(WindowInformationRecord *)windowInformationRecord;
 
 @end
 

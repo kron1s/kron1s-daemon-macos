@@ -13,9 +13,11 @@
 
 #import "PrivacyConsentController.h"
 #import "UserPreferencePersistence.h"
-#import "WindowInformation.h"
+#import "WindowInformation+WindowInformationRecord.h"
+#import "TimeTrackingPersistence.h"
 
-WindowInformation *_getActiveWindowInformation() {
+static WindowInformation *_getActiveWindowInformation()
+{
     __block NSRunningApplication *activeApplication;
     __block NSDictionary *activeWindow;
     
@@ -46,25 +48,25 @@ WindowInformation *_getActiveWindowInformation() {
     return windowInformation;
 }
 
+static WindowInformationRecord *_generateWindowInformationRecord(WindowInformation *windowInformation)
+{
+    WindowInformationRecord *windowInformationRecord = [WindowInformationRecord new];
+    windowInformationRecord.windowInformation = windowInformation;
+    windowInformationRecord.timestamp = [[NSDate date] timeIntervalSince1970];
+    return windowInformationRecord;
+}
+
 @interface TimeTrackingController ()
 
 @property (nonatomic, strong) dispatch_source_t timer;
+
+@property (retain, nonnull) TimeTrackingPersistence *timeTrackingPersistence;
 
 @end
 
 @implementation TimeTrackingController
 
-+ (instancetype)sharedController
-{
-    static dispatch_once_t once;
-    static TimeTrackingController *sharedController;
-    dispatch_once(&once, ^{
-        sharedController = [[self alloc] init];
-    });
-    return sharedController;
-}
-
-- (instancetype)init
+- (instancetype)initWithTimeTrackingPersistence:(nonnull TimeTrackingPersistence *)timeTrackingPersistence
 {
     if (self = [super init]) {
         [self.KVOController observe:[UserPreferencePersistence sharedController]
@@ -78,6 +80,8 @@ WindowInformation *_getActiveWindowInformation() {
                                       [self _disableTracking];
                                   }
                               }];
+        
+        self.timeTrackingPersistence = timeTrackingPersistence;
     }
     return self;
 }
@@ -89,10 +93,15 @@ WindowInformation *_getActiveWindowInformation() {
     _timer = dispatch_source_create(DISPATCH_SOURCE_TYPE_TIMER, 0, 0, queue);
     double interval = 1.000f;
     if (_timer) {
+        __block __typeof__(self) _self = self;
         dispatch_source_set_timer(_timer, dispatch_time(DISPATCH_TIME_NOW, interval * NSEC_PER_SEC), interval * NSEC_PER_SEC, (1ull * NSEC_PER_SEC) / 10);
         dispatch_source_set_event_handler(_timer, ^{
             WindowInformation *windowInformation = _getActiveWindowInformation();
+            WindowInformationRecord *windowInformationRecord = _generateWindowInformationRecord(windowInformation);
+#ifdef DEBUG
             NSLog(@"%@", [windowInformation toNSDictionary]);
+#endif
+            [_self->_timeTrackingPersistence pushWindowInformationRecord:windowInformationRecord];
         });
         dispatch_resume(_timer);
     }

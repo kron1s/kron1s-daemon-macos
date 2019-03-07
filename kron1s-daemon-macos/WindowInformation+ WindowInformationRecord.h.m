@@ -6,7 +6,7 @@
 //  Copyright © 2019 Rijn. All rights reserved.
 //
 
-#import "WindowInformation.h"
+#import "WindowInformation+WindowInformationRecord.h"
 
 @implementation WindowInformation
 
@@ -47,5 +47,9 @@
              @"path": self.path,
              };
 }
+
+@end
+
+@implementation WindowInformationRecord
 
 @end

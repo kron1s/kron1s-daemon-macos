@@ -29,8 +29,8 @@
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
     _userPreferencePersistence = [UserPreferencePersistence new];
     _statusBarController = [StatusBarController new];
-    _timeTrackingController = [TimeTrackingController new];
     _timeTrackingPersistence = [TimeTrackingPersistence new];
+    _timeTrackingController = [[TimeTrackingController alloc] initWithTimeTrackingPersistence:_timeTrackingPersistence];
 }
 
 

@@ -38,5 +38,9 @@ static NSString* const kUserDatabaseFilename = @"RECORD.DB";
     return self;
 }
 
+- (void)pushWindowInformationRecord:(WindowInformationRecord *)windowInformationRecord
+{
+    NSLog(@"Record pushed to persistence: %@", windowInformationRecord);
+}
 
 @end

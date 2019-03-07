@@ -8,10 +8,13 @@
 
 #import <Foundation/Foundation.h>
 
+#import "TimeTrackingPersistence.h"
+
 NS_ASSUME_NONNULL_BEGIN
 
 @interface TimeTrackingController : NSObject
-+ (instancetype)sharedController;
+
+- (instancetype)initWithTimeTrackingPersistence:(TimeTrackingPersistence *)timeTrackingPersistence;
 
 @end
 

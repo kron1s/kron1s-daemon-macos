@@ -1,5 +1,5 @@
 //
-//  WindowInformation.h
+//  WindowInformation+WindowInformationRecord.h
 //  kron1s-daemon-macos
 //
 //  Created by Rijn on 3/2/19.
@@ -21,6 +21,14 @@ NS_ASSUME_NONNULL_BEGIN
 @property (atomic, copy) NSString *path;
 
 - (NSDictionary *)toNSDictionary;
+
+@end
+
+@interface WindowInformationRecord : NSObject
+
+@property (nonatomic, retain) WindowInformation *windowInformation;
+@property (atomic, copy) NSString *deviceIdentifier;
+@property (nonatomic, assign) NSTimeInterval timestamp;
 
 @end
 
