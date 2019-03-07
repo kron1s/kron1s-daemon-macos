@@ -13,6 +13,8 @@ NS_ASSUME_NONNULL_BEGIN
 @interface StatusBarController : NSObject
 + (instancetype)sharedController;
 
+- (void)updateSecondsTrackedToday:(NSUInteger)secondsTrackedToday;
+
 @end
 
 NS_ASSUME_NONNULL_END

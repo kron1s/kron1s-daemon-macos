@@ -18,7 +18,7 @@
 @property(atomic, strong) NSStatusItem *statusItem;
 @property(atomic, strong) NSMenu *statusMenu;
 @property(atomic, strong) NSPopover *popover;
-@property(atomic, strong) NSViewController *popoverContentViewController;
+@property(atomic, strong) PopoverContentViewController *popoverContentViewController;
 
 @end
 
@@ -47,7 +47,7 @@
         [_statusItem.button setAction:@selector(showContextMenu:)];
         [_statusItem.button sendActionOn:(NSEventMaskLeftMouseUp | NSEventMaskRightMouseUp)];
         
-        _popoverContentViewController = [[PopoverContentViewController alloc] init];
+        _popoverContentViewController = [PopoverContentViewController new];
         
         _statusMenu = [NSMenu new];
         
@@ -98,6 +98,11 @@
                               ofView:_statusItem.button
                        preferredEdge:NSRectEdgeMinY];
     }
+}
+
+- (void)updateSecondsTrackedToday:(NSUInteger)secondsTrackedToday
+{
+    [_popoverContentViewController updateSecondsTrackedToday:secondsTrackedToday];
 }
 
 @end

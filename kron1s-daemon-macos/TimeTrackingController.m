@@ -101,7 +101,7 @@ static WindowInformationRecord *_generateWindowInformationRecord(WindowInformati
 #ifdef DEBUG
             NSLog(@"%@", [windowInformation toNSDictionary]);
 #endif
-            [_self->_timeTrackingPersistence pushWindowInformationRecord:windowInformationRecord];
+            [_self->_timeTrackingPersistence insertWindowInformationRecord:windowInformationRecord];
         });
         dispatch_resume(_timer);
     }

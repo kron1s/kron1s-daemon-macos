@@ -30,13 +30,20 @@
     _userPreferencePersistence = [UserPreferencePersistence new];
     _statusBarController = [StatusBarController new];
     _timeTrackingPersistence = [TimeTrackingPersistence new];
+    _timeTrackingPersistence.delegate = self;
     _timeTrackingController = [[TimeTrackingController alloc] initWithTimeTrackingPersistence:_timeTrackingPersistence];
 }
-
 
 - (void)applicationWillTerminate:(NSNotification *)aNotification {
     // Insert code here to tear down your application
 }
 
+- (void)secondsTrackedTodayUpdated:(NSUInteger)secondsTrackedToday
+{
+#ifdef DEBUG
+    NSLog(@"secondsTrackedTodayUpdated %ld", secondsTrackedToday);
+#endif
+    [_statusBarController updateSecondsTrackedToday:secondsTrackedToday];
+}
 
 @end

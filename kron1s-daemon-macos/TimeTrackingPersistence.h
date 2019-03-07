@@ -12,9 +12,17 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+@protocol TimeTrackingPersistenceDelegate <NSObject>
+
+- (void)secondsTrackedTodayUpdated:(NSUInteger)secondsTrackedToday;
+
+@end
+
 @interface TimeTrackingPersistence : NSObject
 
-- (void)pushWindowInformationRecord:(WindowInformationRecord *)windowInformationRecord;
+@property (nonatomic, weak) id<TimeTrackingPersistenceDelegate> delegate;
+
+- (void)insertWindowInformationRecord:(WindowInformationRecord *)windowInformationRecord;
 
 @end
 

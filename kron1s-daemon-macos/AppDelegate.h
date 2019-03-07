@@ -8,8 +8,8 @@
 
 #import <Cocoa/Cocoa.h>
 
-@interface AppDelegate : NSObject <NSApplicationDelegate>
+#import "TimeTrackingPersistence.h"
 
+@interface AppDelegate : NSObject <NSApplicationDelegate, TimeTrackingPersistenceDelegate>
 
 @end
-

@@ -12,6 +12,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface PopoverContentViewController : NSViewController
 
+- (void)updateSecondsTrackedToday:(NSUInteger)secondsTrackedToday;
+
 @end
 
 NS_ASSUME_NONNULL_END

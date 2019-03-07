@@ -22,6 +22,15 @@
 
 @end
 
+static NSString *_convertSecondsToHumanReadableTime(NSUInteger seconds)
+{
+    NSDateComponentsFormatter *dcFormatter = [[NSDateComponentsFormatter alloc] init];
+    dcFormatter.zeroFormattingBehavior = NSDateComponentsFormatterZeroFormattingBehaviorPad;
+    dcFormatter.allowedUnits = NSCalendarUnitHour | NSCalendarUnitMinute | NSCalendarUnitSecond;
+    dcFormatter.unitsStyle = NSDateComponentsFormatterUnitsStylePositional;
+    return [dcFormatter stringFromTimeInterval:seconds];
+}
+
 @implementation PopoverContentViewController
 
 - (void)loadView
@@ -93,6 +102,14 @@
 {
     [_activateTrackingSwitch setChecked:NO];
     [_promptLabel setStringValue:@"Tracking disabled."];
+}
+
+- (void)updateSecondsTrackedToday:(NSUInteger)secondsTrackedToday
+{
+    __block __typeof__(self) _self = self;
+    dispatch_async(dispatch_get_main_queue(), ^{
+        [_self->_promptLabel setStringValue:[NSString stringWithFormat:@"Tracked %@ today.", _convertSecondsToHumanReadableTime(secondsTrackedToday)]];
+    });
 }
 
 @end
